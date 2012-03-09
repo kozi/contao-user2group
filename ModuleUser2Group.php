@@ -41,7 +41,7 @@ class ModuleUser2Group extends BackendModule {
 	protected $strTemplate = 'mod_user2group';
 	protected function compile() {
 		$GLOBALS['TL_CSS'][] = 'system/modules/user2group_viewer/html/user2group.css';
-		
+
 		$this->loadLanguageFile('tl_user');
 		$label['group'] = $GLOBALS['TL_LANG']['tl_user']['groups'][0];
 		$label['user']  = $GLOBALS['TL_LANG']['tl_user']['name'][0];
