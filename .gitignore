@@ -1,3 +1,5 @@
 /.settings/**
 /.buildpath
 /.project
+/dist
+/user2group_viewer.zip
