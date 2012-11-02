@@ -28,11 +28,11 @@
  * @filesource
  */
 
-array_insert($GLOBALS['BE_MOD']['system'], -1, array
+array_insert($GLOBALS['BE_MOD']['accounts'], -1, array
 (
 	'user2group_viewer' => array (
 		'callback'   => 'ModuleUser2Group',
-		'icon'       => 'system/themes/default/images/mgroup.gif',
+		'icon'       => 'system/themes/default/images/group.gif',
 	)
 ));
 

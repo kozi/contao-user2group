@@ -30,7 +30,7 @@
 
 
 /**
- * Class ModuleBackupDB 
+ * Class ModuleUser2Group 
  *
  * @copyright  Martin Kozianka 2011-2012 
  * @author     Martin Kozianka <http://kozianka-online.de>
@@ -38,21 +38,22 @@
  */
 class ModuleUser2Group extends BackendModule {
 
-	protected $strTemplate = 'mod_user2group';
+	protected $strTemplate = 'be_user2group';
 	protected function compile() {
-		$GLOBALS['TL_CSS'][] = 'system/modules/user2group_viewer/html/user2group.css';
+		$GLOBALS['TL_CSS'][] = 'system/modules/user2group_viewer/assets/user2group.css';
 
 		$this->loadLanguageFile('tl_user');
-		$label['group'] = $GLOBALS['TL_LANG']['tl_user']['groups'][0];
-		$label['user']  = $GLOBALS['TL_LANG']['tl_user']['name'][0];
-		$label['admin'] = $GLOBALS['TL_LANG']['tl_user']['admin_legend'];
+		$label['group']     = $GLOBALS['TL_LANG']['tl_user']['groups'][0];
+		$label['user']      = $GLOBALS['TL_LANG']['tl_user']['name'][0];
+		$label['admin']     = $GLOBALS['TL_LANG']['tl_user']['admin_legend'];
 
-		$label['title'] = $GLOBALS['TL_LANG']['MSC']['user2group_title'];
+		$label['title']     = $GLOBALS['TL_LANG']['MSC']['user2group_title'];
 		$label['no_groups'] = $GLOBALS['TL_LANG']['MSC']['user2group_no_groups'];
 
 
-		$groups = false;
+		$groups  = false;
 		$allUser = array();
+		
 		// Groups
 		$dbGroups = $this->Database->prepare("SELECT name, id FROM tl_user_group ORDER BY name ASC")->execute();
 		if ($dbGroups->numRows > 0) {
@@ -82,9 +83,9 @@ class ModuleUser2Group extends BackendModule {
 			$allUser[] = $user;
 		}
 		
-		$this->Template->label = $label;
-		$this->Template->allUser = $allUser;
-		$this->Template->groups = $groups;
+		$this->Template->label    = $label;
+		$this->Template->allUser  = $allUser;
+		$this->Template->groups   = $groups;
 		
 		
 	}
