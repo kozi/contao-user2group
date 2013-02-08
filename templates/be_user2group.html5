@@ -1,4 +1,3 @@
-
 <div id="user2group_viewer">
 	<h2><?php echo $this->label['title']; ?></h2>
 

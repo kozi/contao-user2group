@@ -1,5 +1,18 @@
 <?php
 
+/**
+ * Contao Open Source CMS
+* Copyright (C) 2005-2013 Leo Feyer
+*
+*
+* PHP version 5
+* @copyright  Martin Kozianka 2011-2013 <http://kozianka.de/>
+* @author     Martin Kozianka <http://kozianka.de/>
+* @package    user2group_viewer
+* @license    LGPL
+* @filesource
+*/
+
 ClassLoader::addClasses(array(
 	'ModuleUser2Group'          => 'system/modules/user2group_viewer/ModuleUser2Group.php'
 ));
