@@ -2,7 +2,7 @@
 
 /**
  * Contao Open Source CMS
- * Copyright (C) 2005-2012 Leo Feyer
+ * Copyright (C) 2005-2013 Leo Feyer
  *
  * Formerly known as TYPOlight Open Source CMS.
  *
@@ -21,7 +21,7 @@
  * Software Foundation website at <http://www.gnu.org/licenses/>.
  *
  * PHP version 5
- * @copyright  Martin Kozianka 2011-2012
+ * @copyright  Martin Kozianka 2011-2013
  * @author     Martin Kozianka <http://kozianka.de>
  * @package    user2group_viewer
  * @license    LGPL

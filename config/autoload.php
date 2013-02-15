@@ -14,7 +14,7 @@
 */
 
 ClassLoader::addClasses(array(
-	'ModuleUser2Group'          => 'system/modules/user2group_viewer/ModuleUser2Group.php'
+	'ModuleUser2Group'          => 'system/modules/user2group_viewer/modules/ModuleUser2Group.php'
 ));
 
 TemplateLoader::addFiles(array(
