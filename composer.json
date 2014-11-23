@@ -30,6 +30,9 @@
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
+    "replace":{
+        "contao-legacy/user2group_viewer": "*"
+    },
     "extra": {
         "contao": {
             "sources": {
