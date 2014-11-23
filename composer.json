@@ -1,0 +1,43 @@
+{
+    "name": "martin-kozianka/user2group_viewer",
+    "description": "User 2 Group Viewer, Group and user definition summary page for the backend",
+    "keywords": [
+        "contao",
+        "user",
+        "groups",
+        "summary",
+        "backend"
+    ],
+    "type": "contao-module",
+    "license": "LGPL-3.0+",
+    "authors": [
+        {
+            "name": "Martin Kozianka",
+            "email": "martin@kozianka.de",
+            "homepage": "http://kozianka.de",
+            "role": "Developer"
+        }
+    ],  
+    "support": {
+        "email": "martin@kozianka.de",
+        "issues": "https://github.com/kozi/user2group_viewer/issues",
+        "irc": "irc://irc.freenode.org/contao.dev",
+        "source": "https://github.com/kozi/user2group_viewer"
+    },
+    "require": {
+        "php": ">=5.4",
+        "contao/core": "~3"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "contao": {
+            "sources": {
+                "contao": "system/modules/user2group_viewer"
+            }
+        }
+    },
+    "config": {
+        "component-dir": "../assets/components"
+    }
+}

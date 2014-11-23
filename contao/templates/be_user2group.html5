@@ -1,0 +1,59 @@
+<div id="user2group_viewer">
+    <h2><?php echo $this->label['title']; ?></h2>
+
+    <h3><?php echo $this->label['group']; ?></h3>
+    <?php if ($this->groupList): ?>
+        <ul class="groups">
+            <?php foreach ($this->groupList as $group): ?>
+                <li>
+                    <table class="user">
+                        <thead>
+                        <tr>
+                            <th colspan="3"><?php echo $group->name; ?></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <?php $i=0; foreach ($group->userList as $user): ?>
+                            <tr class="<?php echo ($i++ %2 == 0) ? 'odd':'even' ; ?>">
+                                <td class="name"><?php echo $user->name; ?></td>
+                                <td class="username"><?php echo $user->username; ?></td>
+                                <td class="email"><a href="mailto:<?php echo $user->email; ?>"><?php echo $user->email; ?></a></td>
+                            </tr>
+                        <?php endforeach; ?>
+                        </tbody></table>
+                </li>
+            <?php endforeach; ?>
+        </ul>
+
+    <?php else: ?>
+        <p><?php echo $this->label['no_groups']; ?></p>
+    <?php endif; ?>
+
+    <h3>Benutzer</h3>
+    <table class="allUser">
+        <thead>
+        <tr>
+            <th><?php echo $this->label['user']; ?></th>
+            <th><?php echo $this->label['group']; ?></th>
+        </tr>
+        </thead>
+        <tbody>
+        <?php foreach ($this->userList as $user): ?>
+            <tr class="<?php echo ($i++ %2 == 0) ? 'odd':'even' ; ?>">
+                <td class="name">
+                    <a href="mailto:<?php echo $user->email; ?>"><?php echo $user->name; ?></a>
+                </td>
+
+                <td class="groups">
+                    <?php if($user->groupList): foreach ($user->groupList as $g):
+                        echo '<span>'.$g->name.'</span> ';
+                    endforeach; endif;
+                    if ($user->admin) { echo '<span class="admin">'.$this->label['admin'].'</span>'; } ?>
+                </td>
+
+            </tr>
+        <?php endforeach; ?>
+        </tbody></table>
+
+    <div class="clear"/></div>
+</div>

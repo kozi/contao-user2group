@@ -1,5 +1,20 @@
-/.settings/**
-/.buildpath
-/.project
-/dist
-/user2group_viewer.zip
+# OS
+.DS_Store
+Thumbs.db
+
+# IDEs
+.buildpath
+.project
+.settings/
+.build/
+.idea/
+nbproject/
+
+# bower
+contao/**/.bower.json
+contao/**/bower.json
+
+# dependencies
+build
+vendor
+composer.lock
