@@ -20,3 +20,4 @@ ClassLoader::addClasses(array(
 TemplateLoader::addFiles(array(
 	'be_user2group' 			=> 'system/modules/user2group_viewer/templates',
 ));
+

@@ -86,3 +86,4 @@ class ModuleUser2Group extends BackendModule {
         $this->arrUserList[$objU->id] = $objU;
     }
 }
+
