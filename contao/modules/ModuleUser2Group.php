@@ -31,7 +31,7 @@ class ModuleUser2Group extends BackendModule {
     protected function compile() {
         $this->loadLanguageFile('tl_user');
 
-        $GLOBALS['TL_CSS'][] = 'system/modules/user2group_viewer/assets/user2group.css';
+        $GLOBALS['TL_CSS'][] = 'system/modules/user2group/assets/user2group.css';
 
         $label['group']      = $GLOBALS['TL_LANG']['tl_user']['groups'][0];
         $label['user']       = $GLOBALS['TL_LANG']['tl_user']['name'][0];
@@ -41,12 +41,12 @@ class ModuleUser2Group extends BackendModule {
         $label['no_groups']  = $GLOBALS['TL_LANG']['MSC']['user2group_no_groups'];
 
 
-        $arrGroupList = array();
-        $arrUserList  = array();
+        $arrGroupList = [];
+        $arrUserList  = [];
 
 
         // Get groups
-        $objGroupCollection = \UserGroupModel::findAll(array('order' => 'name ASC'));
+        $objGroupCollection = \UserGroupModel::findAll(['order' => 'name ASC']);
         if ($objGroupCollection !== null) {
             foreach($objGroupCollection as $objGroup) {
                 $this->addGroup($objGroup);
@@ -54,7 +54,7 @@ class ModuleUser2Group extends BackendModule {
         }
 
         // User
-        $objUserCollection = \UserModel::findAll(array('order' => 'name ASC'));
+        $objUserCollection = \UserModel::findAll(['order' => 'name ASC']);
         if ($objUserCollection !== null) {
             foreach($objUserCollection as $objUser) {
                 $this->addUser($objUser);

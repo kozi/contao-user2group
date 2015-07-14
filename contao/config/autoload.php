@@ -13,10 +13,10 @@
  */
 
 ClassLoader::addClasses(array(
-	'ModuleUser2Group'          => 'system/modules/user2group_viewer/modules/ModuleUser2Group.php'
+	'ModuleUser2Group'          => 'system/modules/user2group/modules/ModuleUser2Group.php'
 ));
 
 TemplateLoader::addFiles(array(
-	'be_user2group' 			=> 'system/modules/user2group_viewer/templates',
+	'be_user2group' 			=> 'system/modules/user2group/templates',
 ));
 

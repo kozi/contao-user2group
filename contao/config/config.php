@@ -12,12 +12,11 @@
  * @filesource
  */
 
-array_insert($GLOBALS['BE_MOD']['accounts'], 4, array
-(
-	'user2group_viewer' => array (
+array_insert($GLOBALS['BE_MOD']['accounts'], 4, [
+	'user2group_viewer' => [
 		'callback'   => 'ModuleUser2Group',
 		'icon'       => 'system/themes/default/images/group.gif',
-	)
-));
+	]
+]);
 
 
