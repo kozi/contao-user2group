@@ -1,5 +1,5 @@
 {
-    "name": "martin-kozianka/user2group_viewer",
+    "name": "martin-kozianka/contao-user2group",
     "description": "User 2 Group Viewer, Group and user definition summary page for the backend",
     "keywords": [
         "contao",
@@ -20,16 +20,14 @@
     ],  
     "support": {
         "email": "martin@kozianka.de",
-        "issues": "https://github.com/kozi/user2group_viewer/issues",
+        "issues": "https://github.com/kozi/contao-user2group/issues",
         "irc": "irc://irc.freenode.org/contao.dev",
-        "source": "https://github.com/kozi/user2group_viewer"
+        "source": "https://github.com/kozi/contao-user2group"
     },
     "require": {
-        "contao-community-alliance/composer-plugin": "~2"
-    },
-    "require-dev": {
         "php": ">=5.5",
-        "contao/core": ">=3.3"
+        "contao/core": ">=3.3",
+        "contao-community-alliance/composer-plugin": "~2"        
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
@@ -39,7 +37,7 @@
     "extra": {
         "contao": {
             "sources": {
-                "contao": "system/modules/user2group_viewer"
+                "contao": "system/modules/user2group"
             }
         }
     },
