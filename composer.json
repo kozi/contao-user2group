@@ -25,6 +25,9 @@
         "source": "https://github.com/kozi/user2group_viewer"
     },
     "require": {
+        "contao-community-alliance/composer-plugin": "~2"
+    },
+    "require-dev": {
         "php": ">=5.5",
         "contao/core": ">=3.3"
     },
