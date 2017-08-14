@@ -1,6 +1,4 @@
 <div id="user2group_viewer">
-    <h2><?=$this->label['title']?></h2>
-
     <h3><?=$this->label['group']?></h3>
     <?php if ($this->groupList): ?>
         <ul class="groups">

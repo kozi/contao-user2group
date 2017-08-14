@@ -34,14 +34,10 @@ class ModuleUser2Group extends BackendModule {
         $label['group']      = $GLOBALS['TL_LANG']['tl_user']['groups'][0];
         $label['user']       = $GLOBALS['TL_LANG']['tl_user']['name'][0];
         $label['admin']      = $GLOBALS['TL_LANG']['tl_user']['admin_legend'];
-
-        $label['title']      = $GLOBALS['TL_LANG']['MSC']['user2group_title'];
         $label['no_groups']  = $GLOBALS['TL_LANG']['MSC']['user2group_no_groups'];
-
 
         $arrGroupList = [];
         $arrUserList  = [];
-
 
         // Get groups
         $objGroupCollection = \UserGroupModel::findAll(['order' => 'name ASC']);
@@ -87,4 +83,3 @@ class ModuleUser2Group extends BackendModule {
         $this->arrUserList[$objU->id] = $objU;
     }
 }
-
