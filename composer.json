@@ -1,5 +1,5 @@
 {
-    "name": "martin-kozianka/contao-user2group",
+    "name": "martin-kozianka/contao-user2group-bundle",
     "description": "User 2 Group Viewer, Group and user definition summary page for the backend",
     "keywords": [
         "contao",
@@ -8,7 +8,6 @@
         "summary",
         "backend"
     ],
-    "type": "contao-module",
     "license": "LGPL-3.0+",
     "authors": [
         {
@@ -17,27 +16,31 @@
             "homepage": "http://kozianka.de",
             "role": "Developer"
         }
-    ],  
+    ],
     "support": {
         "email": "martin@kozianka.de",
         "issues": "https://github.com/kozi/contao-user2group/issues",
-        "irc": "irc://irc.freenode.org/contao.dev",
         "source": "https://github.com/kozi/contao-user2group"
     },
-    "require": {
-        "contao/core-bundle": "~3.5 || ~4.4",
-        "contao-community-alliance/composer-plugin": "~2.4 || ~3.0"
+    "type": "contao-bundle",
+    "autoload": {
+        "psr-4": {
+            "MartinKozianka\\User2GroupBundle\\": "src/"
+        },
+        "classmap": [
+            "src/Resources/contao/"
+        ],
+        "exclude-from-classmap": [
+            "src/Resources/contao/config/",
+            "src/Resources/contao/languages/",
+            "src/Resources/contao/templates/"
+        ]
     },
-    "minimum-stability": "dev",
-    "prefer-stable": true,
-    "replace":{
-        "contao-legacy/user2group_viewer": "*"
+    "require": {
+        "php": ">=7.2.0",
+        "contao/core-bundle": "~4.4"
     },
     "extra": {
-        "contao": {
-            "sources": {
-                "contao": "system/modules/user2group"
-            }
-        }
+        "contao-manager-plugin": "MartinKozianka\\User2GroupBundle\\ContaoManager\\Plugin"
     }
 }
