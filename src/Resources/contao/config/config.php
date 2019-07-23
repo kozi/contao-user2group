@@ -13,8 +13,5 @@
  */
 
 array_insert($GLOBALS['BE_MOD']['accounts'], 4, [
-    'user2group_viewer' => [
-        'callback' => 'MartinKozianka\User2Group\ModuleUser2Group',
-        'icon' => 'system/themes/default/images/group.gif',
-    ],
+    'user2group_viewer' => ['callback' => 'MartinKozianka\User2Group\ModuleUser2Group'],
 ]);

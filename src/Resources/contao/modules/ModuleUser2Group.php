@@ -32,7 +32,7 @@ class ModuleUser2Group extends \BackendModule
     {
         $this->loadLanguageFile('tl_user');
 
-        $GLOBALS['TL_CSS'][] = 'system/modules/user2group/assets/user2group.css';
+        $GLOBALS['TL_CSS'][] = 'bundles/martinkoziankauser2group/user2group.css';
 
         $label['group'] = $GLOBALS['TL_LANG']['tl_user']['groups'][0];
         $label['user'] = $GLOBALS['TL_LANG']['tl_user']['name'][0];
