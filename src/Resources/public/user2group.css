@@ -5,7 +5,6 @@
  *
  */
 
-
 #user2group_viewer {
 	background-color: #ffffff;
 	display: block;
@@ -15,10 +14,12 @@
 
 #user2group_viewer h2 {
 	font-size: 22px;
+	margin: 1.5rem 0 1rem 0;
 }
 
 #user2group_viewer h3 {
 	font-size: 18px;
+	margin: 1.5rem 0 1rem 0;
 }
 
 #user2group_viewer li,
@@ -37,15 +38,15 @@
 }
 
 #user2group_viewer th {
-	background-color: #0f1c26;
+	background-color: #4F4F4F;
 	color: #fff;
 	text-align: left;
-	padding: 5px;
+	padding: 7px;
 	margin: 1px 1px;
 }
 
 #user2group_viewer td {
-	padding: 5px;
+	padding: 7px;
 	margin: 1px 1px;
 }
 
@@ -85,11 +86,4 @@
 
 #user2group_viewer td.groups span.admin {
 	background-color: #CF8E8E;
-}
-
-#user2group_viewer p,
-#user2group_viewer a,
-#user2group_viewer span,
-#user2group_viewer li {
-	font-size: 12px;
 }
